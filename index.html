@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form action="" class="form-group" onsubmit="return check()">
+      <h2>Register as a member</h2>
+      <p>
+        <label for="">Student ID:</label>
+        <input type="text" id="student_id" class="form-control"/>
+        <span id="student_id-error" class="error_text"></span>
+      </p>
+      <p>
+        <label for="">Full name:</label>
+        <input type="text" id="fullname" class="form-control"/>
+        <span id="fullname-error" class="error_text"></span>
+      </p>
+      <p>
+        <label for="">Email:</label>
+        <input type="text" id="email" class="form-control"/>
+        <span id="email-error" class="error_text"></span>
+      </p>
+      <p>
+        <fieldset id="genders">
+            <legend>Gender</legend>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+        </fieldset>
+        <span id="gender-error" class="error_text"></span>
+      </p>
+        <p>
+            <fieldset id="hobby">
+                <legend>Hobby</legend>
+                <input type="checkbox" name="hobbies">Reading books
+                <input type="checkbox" name="hobbies">Travel
+                <input type="checkbox" name="hobbies">Culinary
+                <br>
+                <input type="checkbox" name="hobbies">Playing sports
+                <input type="checkbox" name="hobbies">Other activities
+            </fieldset>
+            <span id="hobbies-error" class="error_text"></span>
+        </p>
+        <p>
+            <label for="">Nationality</label>
+            <select name="" id="nationality">
+                <option value="0">Choose your nationality</option>
+                <option value="1">Viet Nam</option>
+                <option value="2">England</option>
+                <option value="3">Germany</option>
+                <option value="4">Japan</option>
+            </select>
+            <br>
+            <span id="nationality-error" class="error_text"></span>
+        </p>
+        <p>
+            <label for="">Note</label>
+            <textarea name="" id="note" cols="51" rows="10" class="note"></textarea>
+        </p>
+        <button class="form-button">Sign up</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>

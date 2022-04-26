@@ -97,12 +97,12 @@ function check() {
   var nationality = document.getElementById("nationality");
   var error_nationality = document.getElementById("nationality-error");
   if (nationality.value == 0) {
-    nationality.className = "error_alert";
+    nationality.className = "nationality_error";
     error_nationality.innerHTML = "Please choose your nationality";
     error_nationality.style.color = "red";
     return false;
   } else {
-    nationality.className = "success_alert";
+    nationality.className = "nationality_success";
     error_nationality.innerHTML = "Success";
     error_nationality.style.color = "green";
   }

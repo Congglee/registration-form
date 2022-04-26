@@ -45,6 +45,12 @@ body {
   background-color: yellow;
 }
 
+.nationality_succes {
+  padding: 5px;
+  border: solid 2px lightgreen;
+  background-color: whitesmoke;
+}
+
 .form-group fieldset {
   border: solid 1px lightslategray;
   font-size: 16px;

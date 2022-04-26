@@ -7,11 +7,11 @@ body {
 
 .form-group {
   width: 400px;
-  margin: 12px auto;
+  margin: 8px auto;
   background-color: whitesmoke;
   padding: 10px 40px;
   border: solid 2px black;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .form-group h2 {
@@ -34,10 +34,15 @@ body {
   cursor: pointer;
 }
 .nationality {
-  width: 400px;
-  padding: 8px;
+  padding: 5px;
   border: solid 1px lightslategray;
   cursor: pointer;
+}
+
+.nationality_error {
+  padding: 5px;
+  border: solid 1px red;
+  background-color: yellow;
 }
 
 .form-group fieldset {
